@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Check your local weather</title>
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class = "titleContainer">
+        <h1>Weatherology</h1>
+        <p></p>
+      </div>
+    </header>
+    <div class = "container">
+      <div class = "weather-header">
+        <h1>Weather Report</h1>
+        <p>Check your local weather instanteneously</p>
+      </div>
+      <div class = "notification-header">
+         <p id = "error"></p>
+      </div>
+      <div class = "weather-container">
+        <div class = "weather-icon">
+          <img id = "icon" src = "./resources/images/unknown.png" alt= "unknown image">
+        </div>
+        <div class = "temperature">
+          <div class = "temperature-value">
+            <p>-</p>
+          </div>
+          <div class = "letter">
+            <p>°<span>C</span></p>
+          </div>
+        </div>
+        <div class = "temperature-description">
+          <p> _ </p>
+        </div>
+        <div class = "location">
+          <p> _ </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class = "logo-container">
+
+      </div>
+    </footer>
+    <script src = "./resources/javascript/app.js"></script>
+  </body>
+</html>
