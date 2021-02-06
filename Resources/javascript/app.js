@@ -6,7 +6,6 @@ window.addEventListener('load', () => {
   const location = document.querySelector(".location");
   const temps = document.querySelector(".temperature");
   const temp = document.querySelector(".temperature-value");
-  const notificationElement = document.querySelector("notification-header");
   const wIcon = document.getElementById('icon');
   const tempSpan = document.querySelector(".letter span");
 
@@ -30,7 +29,7 @@ window.addEventListener('load', () => {
           const icon = data.weather[0].icon;
           console.log(icon);
 
-          //Formula for Celcius
+          //Formula for Celsius
           let fahr = (temperature * (9 / 5) + 32);
 
           //set DOM Elements from the api
@@ -52,6 +51,6 @@ window.addEventListener('load', () => {
         });
     });
   }else{
-    notificationElement.textContent = "ERROR";
+    console.log("ERROR");
   }
 });
