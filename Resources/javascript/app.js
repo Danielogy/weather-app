@@ -36,7 +36,7 @@ window.addEventListener('load', () => {
           tempDesc.textContent = description;
           temp.textContent = temperature;
           location.textContent = name + ", " + country;
-          wIcon.src = `./resources/images/${icon}.png`;
+          wIcon.src = `Resources/images/${icon}.png`;
 
           //addEventListener C - F
           temp.addEventListener('click', () => {
